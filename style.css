@@ -1,0 +1,62 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard{
+    color:white;
+    background-color: #1992d4;
+    height:100vh;
+    width:15%;
+    font-weight: bold;
+    
+}
+.title{
+    margin-left:13%;
+    margin-top:20px;
+}
+
+.dashboard > .selection{
+    margin-left:10%;
+    margin-top:30px;
+}
+
+.dashboard .selection > div{
+    padding:10px;
+    font-weight: bold;
+}
+
+
+.dashboard .selection div a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+.dashboard > .support{
+    margin-left:10%;
+    margin-top:30px;
+}
+
+.dashboard .support > div{
+    padding:10px;
+    font-weight: bold;
+}
+
+
+.dashboard .support div a{
+    text-decoration: none;
+    color:white;
+}
+
+
