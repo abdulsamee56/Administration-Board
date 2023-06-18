@@ -83,12 +83,88 @@ body{
     align-items: center;
 }
 
+.header .grid-container .search{
+    padding-left:20px;
+}
+.header .grid-container .search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.header .grid-container .search-container .mag{
+    height: 3%;
+    width:3%;
+}
+
+
 .header .grid-container .hello {
     display: grid;
     grid-template-columns: repeat(2,1fr); /* Set two rows of auto height */
-    width:300px;
+    width:200px;
+    align-items: center;
+    gap:10px;
+  }
+  .header .grid-container .hello .pfp {
+    grid-row: span 2; /* Span the pfp to two rows */
+    width: 50px; /* Adjust the width of the pfp if necessary */
+  height: 50px; /* Adjust the height of the pfp if necessary */
   }
   
-.pfp {
-    grid-row: 1/ 6;
+
+.text div h3{
+    font-weight:bold;
+}
+
+.header .grid-container .hello .text {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap; /* Prevent line breaks within the hello-text section */
+  }
+
+  .header .grid-container .buttons{
+    justify-self:center ;
+  }
+  .header .grid-container .buttons button{
+    background-color: #1992d4;
+    padding:10px;
+    border-radius: 20px;
+    color: white;
+    width:80px;
+    font-weight: bold;
+    border:1px solid transparent;
+    cursor:pointer;
+    margin:10px;
+  }
+
+.header .grid-container .buttons button:hover{
+    background-color: #036499;
+  }
+
+
+.header .grid-container .icon .noti{
+    width:50%;
+    height:50%;
+}
+
+.header .grid-container .icon .pfp{
+    width:50%;
+    height:50%;
+}
+
+.header .grid-container .icon .user{
+    font-weight: bold;
+}
+
+.header .grid-container .icon{
+    
+    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width:200px;
+}
+
+.header .grid-container .icon {
+    justify-self: center;
+    width:200px;
   }
