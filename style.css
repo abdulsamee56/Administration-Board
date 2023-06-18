@@ -9,7 +9,7 @@ body{
 
 .container{
     display: flex;
-    flex-direction: column;
+    
 }
 
 .dashboard{
@@ -60,3 +60,35 @@ body{
 }
 
 
+.header .grid-container input{
+    background-color: rgb(128,128,128, 0.2);
+    border:1px solid transparent;
+    border-radius: 10px;
+    width:50vw;
+    height:25px;
+}
+.header {
+    padding-left: 5%;
+    padding-top: 20px;
+    width: 100vw;
+    height: 8vw;
+    gap: 300px;
+  }
+  
+.header .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:30px;
+    align-items: center;
+}
+
+.header .grid-container .hello {
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* Set two rows of auto height */
+    width:300px;
+  }
+  
+.pfp {
+    grid-row: 1/ 6;
+  }
