@@ -15,9 +15,11 @@ body{
 .dashboard{
     color:white;
     background-color: #1992d4;
-    height:100vh;
+    height:1000px;
     width:15%;
     font-weight: bold;
+    
+
     
 }
 .title{
@@ -73,6 +75,8 @@ body{
     width: 100vw;
     height: 8vw;
     gap: 300px;
+    border-bottom: 1px solid rgb(128,128,128, 0.5);
+    
   }
   
 .header .grid-container{
@@ -167,4 +171,75 @@ body{
 .header .grid-container .icon {
     justify-self: center;
     width:200px;
+  }
+
+  .project {
+    margin-top: 20px; /* Add a margin value to create space between header and project section */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .project .boxes, .project .main h3 {
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top:20px;
+    text-align: left;
+  }
+
+
+  .project .main .grid-contain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:80px;
+    
+  }
+
+  .project .main .grid-contain .boxes {
+    width:450px;
+    height:150px;
+    
+    border: 1px solid black;
+    border-left-color: yellow;
+    border-left: 10px solid yellow;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+    padding:20px;
+  }
+
+  .project .announcement{
+    grid-column-start: 2;
+    align-self: start;
+    margin-top:50px;
+  }
+
+  .project .announcement .portion{
+    padding:20px;
+    width:300px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  .project .announcement .portion > div{
+    border-bottom: 1px solid black;
+    padding:10px;
+    
+  }
+
+  .project .announcement .trending{
+    margin-top:50px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    padding:20px;
+    width:300px;
+  }
+
+  .project .announcement .trending> div > div{
+    
+    border-bottom:1px solid black;
+    padding:20px;
   }
